@@ -3,10 +3,19 @@
 Thrift Example by Ruby client and Ruby server
 
 ## Usage
+
+### custom thrift client
 ```shell
 cd rb
 ruby server.rb
-ruby client.rb or ruby twitter_thrift_client.rb
+ruby client.rb
+```
+### use thrift client by twitter
+```shell
+gem install thrift_client
+cd rb
+ruby server.rb
+ruby twitter_thrift_client.rb
 ```
 
 ## Thanks
