@@ -35,6 +35,11 @@
  * The server may execute async invocations of the same client in parallel/
  * out of order.
  */
+
+ /**
+ * oneway 表示client发出请求后不必等待恢复(非堵塞)直接进行下一步操作
+ * oneway 方法的返回值必须是void
+ */
  oneway void run_task()
  }
  /* http://saravani.wordpress.com */
