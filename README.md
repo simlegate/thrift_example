@@ -4,7 +4,7 @@ Thrift Example by Ruby client and Ruby server
 
 ## Usage
 
-### custom thrift client
+### use custom thrift client
 ```shell
 cd rb
 ruby server.rb
