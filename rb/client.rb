@@ -8,7 +8,8 @@ begin
 	port = ARGV[0] || 9090
 
         # 定义TTransport，为你的client设置传输方式（如socket， http等）
-	transport = Thrift::BufferedTransport.new(Thrift::Socket.new('localhost', 9090))
+	socket = Thrift::Socket.new('localhost', 9090)
+	transport = Thrift::BufferedTransport.new(socket)
         # 定义Protocal，使用装饰模式（Decorator设计模式）封装TTransport，为你的数据设置编码格式（如二进制格式，JSON格式等）
 	protocol = Thrift::BinaryProtocol.new(transport)
 	# 实例化client对象，调用服务接口
